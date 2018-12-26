@@ -6,7 +6,7 @@ import Ionicons from '@expo/vector-icons';
 class HomeScreen extends React.Component {//Component를 import 안하면 이렇게 쓴다.
   render() {
     return (
-      <View style = {{flex:1, justfyContent : 'center', alignItems : 'center'}}>
+      <View style = {{flex:1, justifyContent : 'center', alignItems : 'center'}}>
       <Text>Home!</Text>
       <Button title = "Go to Setiings" onPress = {()=>this.props.navigation.navigate('Settings')}/>
       <Button title = "Go to Details" onPress = {()=>this.props.navigation.navigate('Details')}/>
@@ -18,7 +18,7 @@ class HomeScreen extends React.Component {//Component를 import 안하면 이렇
 class SettingsScreen extends React.Component {
   render() {
     return (
-      <View style = {{flex:1, justfyContent : 'center', alignItems : 'center'}}>
+      <View style = {{flex:1, justifyContent : 'center', alignItems : 'center'}}>
       <Text>Settings!</Text>
       <Button title = "Go to Home" onPress = {()=>this.props.navigation.navigate('Home')}/>
       <Button title = "Go to Details" onPress = {()=>this.props.navigation.navigate('Details')}/>
@@ -75,7 +75,7 @@ const TabNavigator = createBottomTabNavigator(
       else if (routeName === "Settings"){
         iconName = `ios-options${focused ? '' : '-outline'}`
       }
-      return <Iconicons name={iconName} size = {50} color = {tintColor}/>;
+      return <Ionicons name={iconName} size = {25} color = {tintColor}/>;
     },
   }),
 
